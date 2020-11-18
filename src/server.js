@@ -12,4 +12,4 @@ res.sendFile (path.join (__ dirname + '/ dist / <my-app> /index.html'));
 });
 
 // Inicie la aplicación escuchando en el puerto Heroku predeterminado
-app.listen (process.env.PORT || 8080);
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
